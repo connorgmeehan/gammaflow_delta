@@ -1,0 +1,5 @@
+<group>
+	<audioThreshold>1</audioThreshold>
+	<audioPeakDecay>0.54</audioPeakDecay>
+	<audioMaxDecay>0.995</audioMaxDecay>
+</group>
