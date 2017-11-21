@@ -2,8 +2,7 @@
 
 void DisplayManager::setup(){
     ofLog(OF_LOG_NOTICE) << "ofApp.DisplayManager::setup() - @"<< ofGetElapsedTimef() << "s";
-    activePrimary = nullptr;
-
+    
     channelBank.push_back(&shaderTest);
     channelBank.push_back(&trigDeath);
     channelBank.push_back(&perlinOctopus);
@@ -55,11 +54,10 @@ void DisplayManager::draw(){
         ofTranslate(activeSecondary->getTranslate());
         activeSecondary->draw();
         ofPopMatrix();
-
         if(activeSecondary->gfGetUseCam()){
             cam.end();
         }
-    }
+    }  
 }
 
 void DisplayManager::setActivePrimary(int _bankID){
