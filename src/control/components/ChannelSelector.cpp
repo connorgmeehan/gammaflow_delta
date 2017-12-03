@@ -5,6 +5,7 @@
 
 #include "ofMain.h"
 #include "control/ControlComponent.h"
+#include "control/components/ChannelGui.cpp"
 #include "control/Dragable.cpp"
 #include "engine/DisplayManager.h"
 
@@ -19,6 +20,7 @@ class ChannelSelector : public ControlComponent{
 public:
 
     DisplayManager* dm;
+    ChannelGui* cp_cg;
     bool isPrimary;
     vector<ChannelOption> channelSelection;
 
@@ -48,8 +50,9 @@ public:
     ofParameter<int> numberOfBeatsParam;
 
 
-    void setup(DisplayManager* _dm, bool _isPrimary){
+    void setup(DisplayManager* _dm, ChannelGui* _cp_cg, bool _isPrimary){
         dm = _dm;
+        cp_cg = _cp_cg;
         toolBarWidth = getWidth()-200;
         elementWidth = toolBarWidth/toolbarSize;
         isPrimary = _isPrimary;
@@ -119,6 +122,7 @@ public:
                     ofDrawBitmapString(secondaryKeys[i], getX() + i*elementWidth, getY()+12);
                 }
                 ofDrawBitmapString(channelSelection[i].name, getX() + i*elementWidth, getY()+24);
+                ofDrawBitmapString(channelSelection[i].channelId, getX() + i*elementWidth, getY()+36);
             }
         }
         numberOfBeatsSlider->draw();
@@ -153,14 +157,11 @@ public:
 
     void onKeyPress(int key){
         for(vector<ChannelOption>::size_type i = 0; i < channelSelection.size(); i++){
-            if(isPrimary){
-                if(key == primaryKeys[i]){
-                    dm->setActivePrimary(channelSelection[i].channelId);
-                }
-            } else {
-                if(key == secondaryKeys[i]){
-                    dm->setActiveSecondary(channelSelection[i].channelId);
-                }
+            if(key == primaryKeys[i]){
+                setActive(i);
+            }
+            if(key == secondaryKeys[i]){
+                setActive(i);
             }
         }
     }
@@ -182,19 +183,24 @@ public:
         if(numberOfBeatsCounter >= numberOfBeatsToWait){
             numberOfBeatsCounter = 0;
             if(_behaviourMode == 1){
-                activeChannel = ofRandom(channelSelection.size()-1);
+                setActive(ofRandom(channelSelection.size()-1));
             } else {
                 if(channelSelection.size() != 0){
-                    activeChannel = (activeChannel+1)%channelSelection.size();
+                    setActive((activeChannel+1)%channelSelection.size());
                 }
-            }
-            if(isPrimary){
-                dm->setActivePrimary(channelSelection[activeChannel].channelId);
-            }else{
-                dm->setActiveSecondary(channelSelection[activeChannel].channelId);
             }
         }
     }
-};
+
+    void setActive(int _channelId){
+        activeChannel = _channelId;
+        if(isPrimary){
+            dm->setActivePrimary(channelSelection[activeChannel].channelId);
+        }else{
+            dm->setActiveSecondary(channelSelection[activeChannel].channelId);
+        }
+        cp_cg->setChannelGui(channelSelection[activeChannel].channelId, isPrimary);
+    }};
+
 
 #endif

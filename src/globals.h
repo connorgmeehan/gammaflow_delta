@@ -3,6 +3,8 @@
 
 #include <vector>
 
+extern int screenWidth, screenHeight;
+
 extern std::vector<float> fftBin;
 extern int bufferSize;
 

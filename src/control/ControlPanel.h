@@ -26,6 +26,7 @@ public:
     ChannelBank channelBank;
     ChannelSelector primarySelector;
     ChannelSelector secondarySelector;
+    ChannelGui channelGui;
 
     vector<ControlComponent*> controlComponents;
 

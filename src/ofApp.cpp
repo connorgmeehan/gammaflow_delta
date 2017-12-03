@@ -8,7 +8,7 @@ void ofApp::setup(){
 	ofSetVerticalSync(false);
 	ofSetFrameRate(60);
 	//SETUP AUDIO ANALYSER
-	aa.setup(4);
+	aa.setup(5);
 	//SETUP DISPLAY MANAGER
 	dm.setup();
 	//SETUP CONTROL PANEL
@@ -16,29 +16,27 @@ void ofApp::setup(){
 }
 
 //--------------------------------------------------------------
-void ofApp::updateView(ofEventArgs & args){
+void ofApp::updateControl(ofEventArgs & args){
 	//UPDATE AUDIO ANALYSER
 	aa.update();
-	dm.update();
+	cp.update();
 }
 
-void ofApp::drawView(ofEventArgs & args){
+void ofApp::drawControl(ofEventArgs & args){
 	ofClear(0);
-	ofDrawBitmapString(ofToString("DISPLAY"),10,10);
-	dm.draw();
+	cp.draw();
 }
 
-// THIS RUNS AFTER updateView
+// THIS RUNS AFTER updateControl
 void ofApp::update(){
 	//UPDATE CONTROL PANEL SO IT CAN MAKE CHANGES TO THE DISPLAY MANAGER
-	cp.update();
+	dm.update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){	
 	ofClear(0);
-	ofDrawBitmapString(ofToString("GUI"),10,10);
-	cp.draw();
+	dm.draw();
 }
 
 //--------------------------------------------------------------

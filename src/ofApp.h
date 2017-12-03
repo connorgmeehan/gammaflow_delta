@@ -11,8 +11,8 @@ class ofApp : public ofBaseApp{
 		void setupGui();
 		void update();
 		void draw();
-		void updateView(ofEventArgs & args);
-		void drawView(ofEventArgs & args);
+		void updateControl(ofEventArgs & args);
+		void drawControl(ofEventArgs & args);
 
 		void keyPressed(int key);
 		void keyReleased(int key);

@@ -51,6 +51,8 @@ public:
     virtual int getHeight(){ return (int) dimensions.y - topGap; }
     virtual int getX(){ return transform.x; }
     virtual int getY(){ return transform.y+topGap; }
+    virtual int getTopGap(){ return topGap; }
+    virtual void setName(string _name){ name = _name; }
 };
 
 #endif

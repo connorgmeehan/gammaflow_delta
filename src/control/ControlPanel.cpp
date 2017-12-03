@@ -17,16 +17,20 @@ void ControlPanel::setup(AudioAnalyser* _aa, DisplayManager* _dm){
     channelBank.pre_setup( ofToString("Channel Bank"), 10,250,230,400);
     channelBank.setup(dm);
 
+    channelGui.pre_setup( ofToString("Channel Gui"), 250, 516, 512, 256);
+    channelGui.setup(dm);
+
     primarySelector.pre_setup( ofToString("Primary Channels"), 10, 50, 1000, 90);
-    primarySelector.setup(dm, true);
+    primarySelector.setup(dm, &channelGui, true);
 
     secondarySelector.pre_setup( ofToString("Secondary Channels (hold shift)"), 10, 160, 1000, 90);
-    secondarySelector.setup(dm, false);
+    secondarySelector.setup(dm, &channelGui, false);
 
     controlComponents.push_back(&channelBank);
     controlComponents.push_back(&fftDisplay);
     controlComponents.push_back(&secondarySelector);
     controlComponents.push_back(&primarySelector);
+    controlComponents.push_back(&channelGui);
 }
 
 void ControlPanel::update(){
@@ -58,6 +62,7 @@ void ControlPanel::draw(){
     drawDragable();
     ofSetColor(255);
     ofDrawBitmapString(ofToString(ofGetFrameRate()) + ofToString("fps"), 1000, 12);
+    
 }
 
 void ControlPanel::drawDragable(){

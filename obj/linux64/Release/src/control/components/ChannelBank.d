@@ -1,5 +1,5 @@
 obj/linux64/Release/src/control/components/ChannelBank.o: \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/control/components/ChannelBank.cpp \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/control/components/ChannelBank.cpp \
  /home/connorgmeehan/openFrameworks/libs/openFrameworks/ofMain.h \
  /home/connorgmeehan/openFrameworks/libs/openFrameworks/utils/ofConstants.h \
  /home/connorgmeehan/openFrameworks/libs/tess2/include/tesselator.h \
@@ -347,19 +347,41 @@ obj/linux64/Release/src/control/components/ChannelBank.o: \
  /home/connorgmeehan/openFrameworks/libs/openFrameworks/video/ofGstVideoPlayer.h \
  /home/connorgmeehan/openFrameworks/libs/openFrameworks/3d/ofCamera.h \
  /home/connorgmeehan/openFrameworks/libs/openFrameworks/3d/ofEasyCam.h \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/control/ControlComponent.h \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/engine/DisplayManager.h \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/globals.h \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/Channel.h \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/ShaderTest.cpp \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/BRUT/TrigDeath.cpp \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/BRUT/FFTHistoryPlane.cpp \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/BRUT/PointCloud.cpp \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/BRUT/CrystalButterfly.cpp \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/BRUT/PerlinOctopus.cpp \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/BRUT/InterfaceCircle.cpp \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/BRUT/TextDisplay.cpp \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/control/Dragable.cpp
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/control/ControlComponent.h \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/engine/DisplayManager.h \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/globals.h \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/Channel.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/ofxDatGui.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiGroups.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiLabel.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/core/ofxDatGuiComponent.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/core/ofxDatGuiIntObject.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/themes/ofxDatGuiThemes.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/themes/ofxDatGuiTheme.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/libs/ofxSmartFont/ofxSmartFont.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/core/ofxDatGuiEvents.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/core/ofxDatGuiConstants.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiButton.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiSlider.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiTextInputField.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiTextInput.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiFRM.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGui2dPad.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiColorPicker.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiMatrix.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiTimeGraph.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiScrollView.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiControls.h \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/ShaderTest.cpp \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/TrigDeath.cpp \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/FFTHistoryPlane.cpp \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/PointCloud.cpp \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/CrystalButterfly.cpp \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/PerlinOctopus.cpp \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/InterfaceCircle.cpp \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/TextDisplay.cpp \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/VIBE/TextFloat.cpp \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/control/Dragable.cpp
 
 /home/connorgmeehan/openFrameworks/libs/openFrameworks/ofMain.h:
 
@@ -1089,28 +1111,72 @@ obj/linux64/Release/src/control/components/ChannelBank.o: \
 
 /home/connorgmeehan/openFrameworks/libs/openFrameworks/3d/ofEasyCam.h:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/control/ControlComponent.h:
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/control/ControlComponent.h:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/engine/DisplayManager.h:
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/engine/DisplayManager.h:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/globals.h:
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/globals.h:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/Channel.h:
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/Channel.h:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/ShaderTest.cpp:
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/ofxDatGui.h:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/BRUT/TrigDeath.cpp:
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiGroups.h:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/BRUT/FFTHistoryPlane.cpp:
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiLabel.h:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/BRUT/PointCloud.cpp:
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/core/ofxDatGuiComponent.h:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/BRUT/CrystalButterfly.cpp:
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/core/ofxDatGuiIntObject.h:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/BRUT/PerlinOctopus.cpp:
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/themes/ofxDatGuiThemes.h:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/BRUT/InterfaceCircle.cpp:
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/themes/ofxDatGuiTheme.h:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/displays/BRUT/TextDisplay.cpp:
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/libs/ofxSmartFont/ofxSmartFont.h:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/control/Dragable.cpp:
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/core/ofxDatGuiEvents.h:
+
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/core/ofxDatGuiConstants.h:
+
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiButton.h:
+
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiSlider.h:
+
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiTextInputField.h:
+
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiTextInput.h:
+
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiFRM.h:
+
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGui2dPad.h:
+
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiColorPicker.h:
+
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiMatrix.h:
+
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiTimeGraph.h:
+
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiScrollView.h:
+
+/home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiControls.h:
+
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/ShaderTest.cpp:
+
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/TrigDeath.cpp:
+
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/FFTHistoryPlane.cpp:
+
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/PointCloud.cpp:
+
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/CrystalButterfly.cpp:
+
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/PerlinOctopus.cpp:
+
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/InterfaceCircle.cpp:
+
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/TextDisplay.cpp:
+
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/VIBE/TextFloat.cpp:
+
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/control/Dragable.cpp:

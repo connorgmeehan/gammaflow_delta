@@ -24,8 +24,8 @@ public:
 
     void setup(){
         ofSetCircleResolution(4);
-        setModeLength(3);
-        setTranslate(ofPoint(0, ofGetScreenHeight()/2, 0));
+        setupModes(3);
+        setTranslate(ofPoint(0, -ofGetHeight()/3, 0));
         fftHistory.resize(historyLength);
         for(vector<vector<float>>::size_type i = 0; i < fftHistory.size(); i++){
             for(vector<float>::size_type j = 0; j < (unsigned int) bufferSize/resolutionDivider; j++){
@@ -51,7 +51,7 @@ public:
                         case 0:
                         ofDrawCircle(
                             (int) i*pointWidth*xDir,
-                            (int) -bufferSize/resolutionDivider/2 + j*pointHeight*resolutionDivider + sin(i/historyLength*360*DEG_TO_RAD)*200,
+                            (int) j*pointHeight*resolutionDivider + sin(i/historyLength*360*DEG_TO_RAD)*200,
                             fftHistory[i][j]*200,
                             1
                         );

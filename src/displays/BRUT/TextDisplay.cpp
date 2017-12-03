@@ -14,9 +14,15 @@ private:
 
     float outlineDuplicateScale = 5.0f;
     int yOffset = 0;
+
 public:
+    virtual std::string getChannelName(){ return ofToString("text_displays"); }
+
     void setup(){
         font.load("fonts/OpenSans-ExtraBold.ttf",72,true,true,true);
+        setupChannelGui();
+        getChannelGui()->addTextInput("Dictonary: ", "type here");
+        getChannelGui()->onTextInputEvent(this, &TextDisplay::onTextInputEvent);
     }
     void update(){
         
@@ -24,9 +30,11 @@ public:
     void draw(){
         ofSetColor(255);
         ofFill();
-        font.drawStringAsShapes(dictionary[dictionaryIndex],-font.stringWidth(dictionary[dictionaryIndex])/2, -72+yOffset);
-        if(isHat){
-            ofDrawRectangle(font.getStringBoundingBox(dictionary[dictionaryIndex],-font.stringWidth(dictionary[dictionaryIndex])/2, -72+yOffset));
+        if(dictionary.size() > 0){
+            font.drawStringAsShapes(dictionary[dictionaryIndex],-font.stringWidth(dictionary[dictionaryIndex])/2, -72+yOffset);
+            if(isHat){
+                ofDrawRectangle(font.getStringBoundingBox(dictionary[dictionaryIndex],-font.stringWidth(dictionary[dictionaryIndex])/2, -72+yOffset));
+            }
         }
     }
 
@@ -39,6 +47,24 @@ public:
         }
         if(key == OF_KEY_DOWN){
             yOffset--;
+        }
+    }
+
+    void onTextInputEvent(ofxDatGuiTextInputEvent args){
+        ofLog(OF_LOG_NOTICE) << "TextDisplay::onTextInputEvent( args.text = " << args.text << " ) ";
+        dictionary = vector<string>{""};
+        int dictionaryCounter = 0;
+
+        for(int i = 0; i < args.text.length(); i++){
+            if(args.text[i]== ' ' ){
+                dictionary.push_back("");
+                dictionaryCounter++;
+            } else {
+                dictionary[dictionaryCounter] += args.text[i];
+            }
+        }
+        if(dictionaryIndex > dictionary.size()){
+            dictionaryIndex = dictionary.size()-1;
         }
     }
 };

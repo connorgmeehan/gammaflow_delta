@@ -1,6 +1,6 @@
 obj/linux64/Release/src/engine/AudioAnalyser.o: \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/engine/AudioAnalyser.cpp \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/engine/AudioAnalyser.h \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/engine/AudioAnalyser.cpp \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/engine/AudioAnalyser.h \
  /home/connorgmeehan/openFrameworks/addons/ofxFFT/src/ofxFFTLive.h \
  /home/connorgmeehan/openFrameworks/libs/openFrameworks/ofMain.h \
  /home/connorgmeehan/openFrameworks/libs/openFrameworks/utils/ofConstants.h \
@@ -350,11 +350,11 @@ obj/linux64/Release/src/engine/AudioAnalyser.o: \
  /home/connorgmeehan/openFrameworks/libs/openFrameworks/3d/ofCamera.h \
  /home/connorgmeehan/openFrameworks/libs/openFrameworks/3d/ofEasyCam.h \
  /home/connorgmeehan/openFrameworks/addons/ofxFFT/src/ofxFFTBase.h \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/engine/aa_components/BeatAnalyserManager.cpp \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/globals.h \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/engine/aa_components/BeatAnalyser.cpp
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/engine/aa_components/BeatAnalyserManager.cpp \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/globals.h \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/engine/aa_components/BeatAnalyser.cpp
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/engine/AudioAnalyser.h:
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/engine/AudioAnalyser.h:
 
 /home/connorgmeehan/openFrameworks/addons/ofxFFT/src/ofxFFTLive.h:
 
@@ -1088,8 +1088,8 @@ obj/linux64/Release/src/engine/AudioAnalyser.o: \
 
 /home/connorgmeehan/openFrameworks/addons/ofxFFT/src/ofxFFTBase.h:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/engine/aa_components/BeatAnalyserManager.cpp:
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/engine/aa_components/BeatAnalyserManager.cpp:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/globals.h:
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/globals.h:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/engine/aa_components/BeatAnalyser.cpp:
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/engine/aa_components/BeatAnalyser.cpp:

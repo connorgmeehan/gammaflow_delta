@@ -62,8 +62,8 @@ public:
         ofTranslate(
             0,0, ofSignedNoise(numberToDraw, theta+2)*10
         );
-            circleRadius = sin(numberToDraw+theta)*fftBin[numberToDraw*10]*scale;
-            circleDistance = 30+((circleDistance + fftBin[numberToDraw*10]*20) / 2);
+            circleRadius = sin(numberToDraw+theta)*fftBin[numberToDraw*5]*scale;
+            circleDistance = 30+((circleDistance + fftBin[numberToDraw*5]*20) / 2);
             for(int x = -numWide/2; x < numWide/2; x++){
                 for(int y = -numHigh/2; y < numHigh/2; y++){
                     ofSetLineWidth(volHistory[abs(x+y)]*5);

@@ -1,6 +1,7 @@
 #include "engine/DisplayManager.h"
 
 void DisplayManager::setup(){
+
     ofLog(OF_LOG_NOTICE) << "ofApp.DisplayManager::setup() - @"<< ofGetElapsedTimef() << "s";
     
     channelBank.push_back(&shaderTest);
@@ -11,6 +12,7 @@ void DisplayManager::setup(){
     channelBank.push_back(&pointCloud);
     channelBank.push_back(&interfaceCircle);
     channelBank.push_back(&textDisplay);
+    channelBank.push_back(&textFloat);
 }
 
 void DisplayManager::update(){
@@ -62,12 +64,18 @@ void DisplayManager::draw(){
 
 void DisplayManager::setActivePrimary(int _bankID){
     activePrimary = channelBank[_bankID];
-    activePrimary->setup();
+    if(!activePrimary->getHasBeenSetup()){
+        activePrimary->setup();
+        activePrimary->setHasBeenSetup(true);
+    }
 }
 
 void DisplayManager::setActiveSecondary(int _bankID){
     activeSecondary = channelBank[_bankID];
-    activeSecondary->setup();
+    if(!activeSecondary->getHasBeenSetup()){
+        activeSecondary->setup();
+        activeSecondary->setHasBeenSetup(true);
+    }
 }
 
 std::string DisplayManager::getChannelName(int _bankID){
@@ -85,4 +93,11 @@ void DisplayManager::recKeyDown(int key){
     if(activeSecondary != nullptr){
         activeSecondary->recKeyDown(key);
     }
+}
+
+bool DisplayManager::hasGui(int _channelIndex){
+    return channelBank[_channelIndex]->hasGui();
+}
+ofxDatGui* DisplayManager::getChannelGui(int _channelIndex){
+    return channelBank[_channelIndex]->getChannelGui();
 }

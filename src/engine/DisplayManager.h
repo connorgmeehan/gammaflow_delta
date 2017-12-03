@@ -6,6 +6,7 @@
 #include "globals.h"
 
 #include "displays/Channel.h"
+#include "ofxDatGui.h"
 #include "displays/ShaderTest.cpp"
 
 #include "displays/BRUT/TrigDeath.cpp"
@@ -15,6 +16,7 @@
 #include "displays/BRUT/PerlinOctopus.cpp"
 #include "displays/BRUT/InterfaceCircle.cpp"
 #include "displays/BRUT/TextDisplay.cpp"
+#include "displays/VIBE/TextFloat.cpp"
 
 
 class DisplayManager{
@@ -35,7 +37,7 @@ public:
     PerlinOctopus perlinOctopus;
     InterfaceCircle interfaceCircle;
     TextDisplay textDisplay;
-    
+    TextFloat textFloat;    
     void setup();
     void update();
     void draw();
@@ -44,7 +46,10 @@ public:
     void setActiveSecondary(int _bankID);
 
     void recKeyDown(int key);
-
+    
+    bool hasGui(int _channelIndex);
+    ofxDatGui* getChannelGui(int _channelIndex);
+    void setChannelGuiPosition();
     std::string getChannelName(int _bankID);
     int getChannelBankSize();
 

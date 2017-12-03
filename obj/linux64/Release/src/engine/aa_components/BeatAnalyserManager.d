@@ -1,5 +1,5 @@
 obj/linux64/Release/src/engine/aa_components/BeatAnalyserManager.o: \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/engine/aa_components/BeatAnalyserManager.cpp \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/engine/aa_components/BeatAnalyserManager.cpp \
  /home/connorgmeehan/openFrameworks/libs/openFrameworks/ofMain.h \
  /home/connorgmeehan/openFrameworks/libs/openFrameworks/utils/ofConstants.h \
  /home/connorgmeehan/openFrameworks/libs/tess2/include/tesselator.h \
@@ -347,8 +347,8 @@ obj/linux64/Release/src/engine/aa_components/BeatAnalyserManager.o: \
  /home/connorgmeehan/openFrameworks/libs/openFrameworks/video/ofGstVideoPlayer.h \
  /home/connorgmeehan/openFrameworks/libs/openFrameworks/3d/ofCamera.h \
  /home/connorgmeehan/openFrameworks/libs/openFrameworks/3d/ofEasyCam.h \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/globals.h \
- /home/connorgmeehan/Dropbox/gammaflow_epsilon/src/engine/aa_components/BeatAnalyser.cpp
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/globals.h \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/engine/aa_components/BeatAnalyser.cpp
 
 /home/connorgmeehan/openFrameworks/libs/openFrameworks/ofMain.h:
 
@@ -1078,6 +1078,6 @@ obj/linux64/Release/src/engine/aa_components/BeatAnalyserManager.o: \
 
 /home/connorgmeehan/openFrameworks/libs/openFrameworks/3d/ofEasyCam.h:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/globals.h:
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/globals.h:
 
-/home/connorgmeehan/Dropbox/gammaflow_epsilon/src/engine/aa_components/BeatAnalyser.cpp:
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/engine/aa_components/BeatAnalyser.cpp:
