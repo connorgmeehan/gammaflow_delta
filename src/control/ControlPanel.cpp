@@ -23,7 +23,7 @@ void ControlPanel::setup(AudioAnalyser* _aa, DisplayManager* _dm){
     primarySelector.pre_setup( ofToString("Primary Channels"), 10, 50, 1000, 90);
     primarySelector.setup(dm, &channelGui, true);
 
-    secondarySelector.pre_setup( ofToString("Secondary Channels (hold shift)"), 10, 160, 1000, 90);
+    secondarySelector.pre_setup( ofToString("Secondary Channels (hold shift)"), 10, 150, 1000, 90);
     secondarySelector.setup(dm, &channelGui, false);
 
     controlComponents.push_back(&channelBank);

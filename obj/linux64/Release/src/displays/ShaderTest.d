@@ -368,7 +368,8 @@ obj/linux64/Release/src/displays/ShaderTest.o: \
  /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiMatrix.h \
  /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiTimeGraph.h \
  /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiScrollView.h \
- /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiControls.h
+ /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiControls.h \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/globals.h
 
 /home/connorgmeehan/openFrameworks/libs/openFrameworks/ofMain.h:
 
@@ -1141,3 +1142,5 @@ obj/linux64/Release/src/displays/ShaderTest.o: \
 /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiScrollView.h:
 
 /home/connorgmeehan/openFrameworks/addons/ofxDatGui/src/components/ofxDatGuiControls.h:
+
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/globals.h:

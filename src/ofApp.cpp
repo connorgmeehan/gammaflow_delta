@@ -16,27 +16,29 @@ void ofApp::setup(){
 }
 
 //--------------------------------------------------------------
-void ofApp::updateControl(ofEventArgs & args){
+void ofApp::updateView(ofEventArgs & args){
 	//UPDATE AUDIO ANALYSER
-	aa.update();
-	cp.update();
+	dm.update();
 }
 
-void ofApp::drawControl(ofEventArgs & args){
+void ofApp::drawView(ofEventArgs & args){
 	ofClear(0);
-	cp.draw();
+	dm.draw();
+
 }
 
-// THIS RUNS AFTER updateControl
+// THIS RUNS AFTER updateView
 void ofApp::update(){
 	//UPDATE CONTROL PANEL SO IT CAN MAKE CHANGES TO THE DISPLAY MANAGER
-	dm.update();
+	aa.update();
+	cp.update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){	
 	ofClear(0);
-	dm.draw();
+	cp.draw();
+
 }
 
 //--------------------------------------------------------------

@@ -381,6 +381,7 @@ obj/linux64/Release/src/control/components/ChannelBank.o: \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/InterfaceCircle.cpp \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/TextDisplay.cpp \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/VIBE/TextFloat.cpp \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/QNTM/ShaderBackground.cpp \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/control/Dragable.cpp
 
 /home/connorgmeehan/openFrameworks/libs/openFrameworks/ofMain.h:
@@ -1178,5 +1179,7 @@ obj/linux64/Release/src/control/components/ChannelBank.o: \
 /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/TextDisplay.cpp:
 
 /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/VIBE/TextFloat.cpp:
+
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/QNTM/ShaderBackground.cpp:
 
 /home/connorgmeehan/Dropbox/gammaflow_delta/src/control/Dragable.cpp:

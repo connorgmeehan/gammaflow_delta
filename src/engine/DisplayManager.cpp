@@ -13,6 +13,7 @@ void DisplayManager::setup(){
     channelBank.push_back(&interfaceCircle);
     channelBank.push_back(&textDisplay);
     channelBank.push_back(&textFloat);
+    channelBank.push_back(&shaderBackground);
 }
 
 void DisplayManager::update(){

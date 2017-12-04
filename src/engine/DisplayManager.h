@@ -18,6 +18,8 @@
 #include "displays/BRUT/TextDisplay.cpp"
 #include "displays/VIBE/TextFloat.cpp"
 
+#include "displays/QNTM/ShaderBackground.cpp"
+
 
 class DisplayManager{
 public:
@@ -37,7 +39,9 @@ public:
     PerlinOctopus perlinOctopus;
     InterfaceCircle interfaceCircle;
     TextDisplay textDisplay;
-    TextFloat textFloat;    
+    TextFloat textFloat;   
+
+    ShaderBackground shaderBackground; 
     void setup();
     void update();
     void draw();

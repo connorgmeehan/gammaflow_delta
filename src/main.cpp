@@ -22,13 +22,14 @@ int main( ){
 	settings.setPosition(ofVec2f(0,0));
 	settings.resizable = true;
 	// uncomment next line to share main's OpenGL resources with gui
-	//settings.shareContextWith = mainWindow;	
+	settings.shareContextWith = mainWindow;	
+	settings.setGLVersion(3,2);
 	shared_ptr<ofAppBaseWindow> viewWindow = ofCreateWindow(settings);
 	viewWindow->setVerticalSync(false);
 
 	shared_ptr<ofApp> mainApp(new ofApp);
-	ofAddListener(viewWindow->events().update,mainApp.get(),&ofApp::updateControl);
-	ofAddListener(viewWindow->events().draw,mainApp.get(),&ofApp::drawControl);
+	ofAddListener(viewWindow->events().update,mainApp.get(),&ofApp::updateView,OF_EVENT_ORDER_AFTER_APP);
+	ofAddListener(viewWindow->events().draw,mainApp.get(),&ofApp::drawView,OF_EVENT_ORDER_AFTER_APP);
 	
 
 	ofRunApp(mainWindow, mainApp);

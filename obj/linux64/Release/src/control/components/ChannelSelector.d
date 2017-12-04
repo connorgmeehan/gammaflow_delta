@@ -382,6 +382,7 @@ obj/linux64/Release/src/control/components/ChannelSelector.o: \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/InterfaceCircle.cpp \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/TextDisplay.cpp \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/VIBE/TextFloat.cpp \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/QNTM/ShaderBackground.cpp \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/control/Dragable.cpp
 
 /home/connorgmeehan/Dropbox/gammaflow_delta/src/globals.h:
@@ -1181,5 +1182,7 @@ obj/linux64/Release/src/control/components/ChannelSelector.o: \
 /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/TextDisplay.cpp:
 
 /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/VIBE/TextFloat.cpp:
+
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/QNTM/ShaderBackground.cpp:
 
 /home/connorgmeehan/Dropbox/gammaflow_delta/src/control/Dragable.cpp:
