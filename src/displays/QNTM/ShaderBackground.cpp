@@ -10,8 +10,13 @@ public:
     std::string getChannelName(){ return "shader_background"; };
     ofShader shader;
     ofVec2f shaderTranslate = ofVec2f(0.5, -0.5);
+    ofTrueTypeFont largeFont;
+    ofTrueTypeFont smallFont;
+
+
     void setup(){
         shader.load("shaders/shadersGL3/quantum/interference");
+
     }
     void update(){}
     void draw(){

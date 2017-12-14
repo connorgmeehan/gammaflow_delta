@@ -61,6 +61,11 @@ public:
         shader.setUniform1f("param1", param1);
         shader.setUniform1f("param2", param2);
         shader.setUniform1f("param3", param3);
+
+        shader.setUniform1f("kick", kickAmp);
+        shader.setUniform1f("snare", snareAmp);
+        shader.setUniform1f("hihat", hatAmp);
+
         shader.setUniform2f("u_translate", shaderTranslate);
 
         float cx = ofGetWidth() / 2.0;

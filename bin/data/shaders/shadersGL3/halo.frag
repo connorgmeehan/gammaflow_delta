@@ -21,7 +21,7 @@ void main(){
 	for(int i=0;i<3;i++) {
 		vec2 uv,p=fragCoord.xy/u_resolution;
 		uv=p;
-		p-=u_translate;
+		p+=-.5;
 		p.x*=u_resolution.x/u_resolution.y;
 		z+=pulse/10;
 		l=length(p);

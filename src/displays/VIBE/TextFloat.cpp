@@ -9,13 +9,13 @@ class TextFloat : public Channel {
 private:
     ofTrueTypeFont fontA, fontB;
     vector<ofPoint> fontAPos, fontBPos;
-    std::string testString = "hello";
+    std::string testString = "crackedit";
 public:
     std::string getChannelName(){ return "text_float"; };
 
     void setup(){
-        fontA.load("fonts/Coco-Gothic-Alternate-Fat-Italic-trial.ttf",40, true, true, true);
-        fontB.load("fonts/Montserrat-BlackItalic.ttf",72, true, true, true);
+        fontA.load("fonts/OpenSans-ExtraBold.ttf",40, true, true, true);
+        fontB.load("fonts/OpenSans-ExtraBold.ttf",72, true, true, true);
         fontAPos.resize(10);
         fontBPos.resize(10);
     }

@@ -1,7 +1,7 @@
 #ifndef GLOBALS
 #define GLOBALS
 
-#include <vector>
+#include "ofMain.h"
 
 extern int screenWidth, screenHeight;
 

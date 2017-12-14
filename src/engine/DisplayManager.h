@@ -19,11 +19,14 @@
 #include "displays/VIBE/TextFloat.cpp"
 
 #include "displays/QNTM/ShaderBackground.cpp"
+#include "displays/QNTM/ShaderDesc.cpp"
 
 
 class DisplayManager{
 public:
     ofEasyCam cam;
+
+    bool fullscreen = false;
 
     Channel* activePrimary = nullptr;
     Channel* activeSecondary = nullptr;
@@ -42,6 +45,7 @@ public:
     TextFloat textFloat;   
 
     ShaderBackground shaderBackground; 
+    ShaderDesc shaderDesc;
     void setup();
     void update();
     void draw();

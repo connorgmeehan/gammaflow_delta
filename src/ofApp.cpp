@@ -5,10 +5,8 @@ void ofApp::setup(){
 
 	ofLog(OF_LOG_NOTICE) << "ofApp::setup() - @"<< ofGetElapsedTimef() << "s";
 	//SETUP ENVIRONMENT
-	ofSetVerticalSync(false);
-	ofSetFrameRate(60);
 	//SETUP AUDIO ANALYSER
-	aa.setup(5);
+	aa.setup(4);
 	//SETUP DISPLAY MANAGER
 	dm.setup();
 	//SETUP CONTROL PANEL

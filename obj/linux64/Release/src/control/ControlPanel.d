@@ -387,6 +387,7 @@ obj/linux64/Release/src/control/ControlPanel.o: \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/TextDisplay.cpp \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/VIBE/TextFloat.cpp \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/QNTM/ShaderBackground.cpp \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/QNTM/ShaderDesc.cpp \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/control/ControlComponent.h \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/control/Dragable.cpp \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/control/components/FFTDisplay.cpp \
@@ -1202,6 +1203,8 @@ obj/linux64/Release/src/control/ControlPanel.o: \
 /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/VIBE/TextFloat.cpp:
 
 /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/QNTM/ShaderBackground.cpp:
+
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/QNTM/ShaderDesc.cpp:
 
 /home/connorgmeehan/Dropbox/gammaflow_delta/src/control/ControlComponent.h:
 
