@@ -25,6 +25,8 @@ public:
     void setup(){
         ofSetCircleResolution(4);
         setupModes(3);
+        setTriggerInterval(4);
+        
         setTranslate(ofPoint(0, -ofGetHeight()/3, 0));
         fftHistory.resize(historyLength);
         for(vector<vector<float>>::size_type i = 0; i < fftHistory.size(); i++){
@@ -79,7 +81,7 @@ public:
         }
     }
 
-    void onKick(){
+    void onKick(float amp){
         shuffleMode();
     }
 

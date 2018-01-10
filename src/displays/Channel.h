@@ -19,9 +19,9 @@ public:
     virtual bool setHasBeenSetup(bool _input){ hasBeenSetup = _input; }
     /* BEAT DETECTION FUNCTIONS */
     #pragma region BEAT_INTERACTIVITY_FUNCTIONS
-    virtual void onSnare(float amp){};
-    virtual void onKick(float amp){};
-    virtual void onHat(float amp){};
+    virtual void onSnare(float amp = -1){};
+    virtual void onKick(float amp = -1){};
+    virtual void onHat(float amp = -1){};
     #pragma endregion
 
     /* POSITIONING FUNCTIONS AND VARIABLES */
@@ -94,8 +94,14 @@ public:
         //overload this for in app functionality;
     }
 
-    virtual void setModeLength(int _modeLength){ modeLength = _modeLength; }
+    virtual void setModeLength(int _modeLength){
+        modeLength = _modeLength;
+        if(modeIndex > modeLength){
+            modeIndex = modeLength;
+        }
+    }
     virtual int getModeLength(){ return modeLength; }
+    virtual void setMode(int _mode){ modeIndex = _mode;}
     virtual int getMode(){ return modeIndex; }
 
     virtual void cycleMode(){

@@ -16,16 +16,13 @@ uniform float kick;
 uniform float snare;
 uniform float hihat;
 
-out vec4 fragColor;
-
 void main(){
     vec3 c;
     float l, t = u_time;
     for(int i = 0; i < 3; i++){ // calc rgb offset;
         vec2 uv, p = gl_FragCoord.xy/u_resolution;
         uv = p;
-        p.x += -00.5 + sin(u_time/2)*0.1;
-        p.y += -0.5 + cos(u_time/5)*0.1;
+        p += vec2(-0.5, -0.5);
         l = length(p); // distance from 0 coord
         t += snare/2*l;
 

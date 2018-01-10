@@ -16,6 +16,9 @@
 #include "displays/BRUT/PerlinOctopus.cpp"
 #include "displays/BRUT/InterfaceCircle.cpp"
 #include "displays/BRUT/TextDisplay.cpp"
+#include "displays/BRUT/SVGDisplay.cpp"
+#include "displays/BRUT/ImageDisplay.cpp"
+
 #include "displays/VIBE/TextFloat.cpp"
 
 #include "displays/QNTM/ShaderBackground.cpp"
@@ -27,9 +30,17 @@ public:
     ofEasyCam cam;
 
     bool fullscreen = false;
+    bool useShader = true;
 
     Channel* activePrimary = nullptr;
     Channel* activeSecondary = nullptr;
+
+    ofFbo primaryFbo;
+    ofTexture primaryTexture;
+    ofFbo secondaryFbo;
+    ofTexture secondaryTexture;
+
+    ofShader inverseShader;
 
     vector<Channel*> channelBank;
     
@@ -43,6 +54,8 @@ public:
     InterfaceCircle interfaceCircle;
     TextDisplay textDisplay;
     TextFloat textFloat;   
+    SVGDisplay svgDisplay;
+    ImageDisplay imageDisplay;
 
     ShaderBackground shaderBackground; 
     ShaderDesc shaderDesc;

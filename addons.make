@@ -1,2 +1,3 @@
 ofxFFT
 ofxDatGui
+ofxSvg

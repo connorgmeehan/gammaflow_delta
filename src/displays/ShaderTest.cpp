@@ -15,6 +15,10 @@ public:
 
     float param1, param2, param3;
     ofVec2f shaderTranslate = ofVec2f(0.5, 0.5);
+
+    ofVec3f kickMom, snareMom, hihatMom; // stores a 3d vector of the momentum of a beat in a randomised direction;
+    ofVec3f kickPos, snarePos, hihatPos; // moves by adding the corresponding momentum each frame
+
     void setup(){
         setupChannelGui();
         getChannelGui()->addTextInput("path", path);
@@ -46,7 +50,9 @@ public:
 
     }
     void update(){
-
+        kickPos += kickMom;
+        snarePos += snareMom;
+        hihatPos += hihatMom;
     }
     void draw(){        
         ofFill();
@@ -65,6 +71,13 @@ public:
         shader.setUniform1f("kick", kickAmp);
         shader.setUniform1f("snare", snareAmp);
         shader.setUniform1f("hihat", hatAmp);
+
+        shader.setUniform3f("kickmom", kickMom);
+        shader.setUniform3f("snaremom", snareMom);
+        shader.setUniform3f("hihatmom", hihatMom);
+        shader.setUniform3f("kickpos", kickPos);
+        shader.setUniform3f("snarepos", snarePos);
+        shader.setUniform3f("hihatpos", hihatPos);
 
         shader.setUniform2f("u_translate", shaderTranslate);
 
@@ -86,7 +99,7 @@ public:
 
 
         //ofRectangle(-200, -200, 400, 400);
-        ofDrawSphere(0,0,0,200);
+        ofDrawSphere(0,0,1000);
         shader.end();
     }
     void onTextInputEvent(ofxDatGuiTextInputEvent e){
@@ -141,6 +154,23 @@ public:
         shaderTranslate.x = e.x;
         shaderTranslate.y = e.y;
     }
+
+    void onKick(float amp){
+        float beatDirection = ofRandomf()*360;
+
+        kickMom = ofVec3f(sin(beatDirection)*TWO_PI/180*amp, cos(beatDirection)*TWO_PI/180*amp, ofRandomf()*amp );
+    }
+    void onSnare(float amp){
+        float beatDirection = ofRandomf()*360;
+
+        snareMom = ofVec3f(sin(beatDirection)*TWO_PI/180*amp, cos(beatDirection)*TWO_PI/180*amp, ofRandomf()*amp );        
+    }
+    void onHat(float amp){
+        float beatDirection = ofRandomf()*360;
+
+        hihatMom = ofVec3f(sin(beatDirection)*TWO_PI/180*amp, cos(beatDirection)*TWO_PI/180*amp, ofRandomf()*amp );
+    }
+
 };
 
 #endif

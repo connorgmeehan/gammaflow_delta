@@ -5,6 +5,7 @@ void ofApp::setup(){
 
 	ofLog(OF_LOG_NOTICE) << "ofApp::setup() - @"<< ofGetElapsedTimef() << "s";
 	//SETUP ENVIRONMENT
+	ofSetFrameRate(120);
 	//SETUP AUDIO ANALYSER
 	aa.setup(4);
 	//SETUP DISPLAY MANAGER
@@ -22,7 +23,6 @@ void ofApp::updateView(ofEventArgs & args){
 void ofApp::drawView(ofEventArgs & args){
 	ofClear(0);
 	dm.draw();
-
 }
 
 // THIS RUNS AFTER updateView

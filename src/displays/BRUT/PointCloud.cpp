@@ -27,8 +27,6 @@ class PointCloud : public Channel {
 
     int fftBinIndex = 0;
 
-    ofShader shader;
-
     void setup(){
         gfUseCam();
         setModeLength(3);
@@ -42,17 +40,6 @@ class PointCloud : public Channel {
             );
             points[i] = ofVec3f(0,0,0);
         }
-
-        #ifdef TARGET_OPENGLES
-            shader.load("shaders/shadersES2/shader");
-        #else
-            if(ofIsGLProgrammableRenderer()){
-                shader.load("shaders/shadersGL3/shader");
-            }else{
-                shader.load("shaders/shadersGL2/shader");
-            }
-        #endif
-
     }
 
     void update(){
@@ -64,7 +51,6 @@ class PointCloud : public Channel {
     }
 
     void draw(){
-        shader.begin();
         for(int i = 0; i < pointNumber; i++){
             ofDrawCircle(points[i]*(0.8+fftBin[(fftBinIndex+i)%fftBin.size()]),1);
             if(doLinks){
@@ -74,7 +60,6 @@ class PointCloud : public Channel {
                 }
             }
         }
-        shader.end();
     }
 
     void onModeChange(int mode){

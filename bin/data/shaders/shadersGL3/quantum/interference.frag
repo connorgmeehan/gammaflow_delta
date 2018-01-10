@@ -24,16 +24,15 @@ void main(){
     for(int i = 0; i < 3; i++){ // calc rgb offset;
         vec2 uv, p = gl_FragCoord.xy/u_resolution;
         uv = p;
-        p.x-= u_translate.x;
-        p.y += u_translate.y;
+        p += vec2(-0.5, -0.5);
         t += pulse;
 
         l = length(p); // distance from 0 coord
         //uv +=p*(sin(t + l*1.) + 0.5) * cos(l*20 - t*2. + snare)*hihat;
-        uv.x += p.x*sin(l*5. - t*2.)*sin(l*2. + t*2.)*kick*1.5;
-        uv.y += p.y*cos(l*t- t*2.)*sin(l*2.)*tan(l);
+        uv.x += p.x*sin(l*20. - t*2.)*sin(l*5. + t*2.) - t/5;
+        uv.y += p.y*cos(l*20. - t*2.)*sin(l)*l;
         //uv+= p*(sin(l/5 - t*10. )+0.5)*(cos(l*50. - t*10.)*);
-        c[i] = .0005/length(abs(mod(uv,1.)-.5))*l;
+        c[i] = (.1 + kick*0.1)/length(abs(mod(uv,1.)-.5));
     }
-    outputColour = vec4(c*t/(5-kick*5), u_time);
+    outputColour = vec4(vec3(c), 1);
 }

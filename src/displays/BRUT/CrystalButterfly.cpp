@@ -22,7 +22,8 @@ public:
     float angleMultiplier = 360/vertexNo;
     float RADIAN = PI/180;
     void setup(){
-        temp.setMode(OF_PRIMITIVE_TRIANGLE_STRIP);            
+        temp.setMode(OF_PRIMITIVE_TRIANGLE_STRIP);
+        setupModes(2);        
     }
     void update(){
         noiseOffset += 0.01;
@@ -45,17 +46,17 @@ public:
                 
                 //float perlinRadius = ofNoise((float) sin((float) xyCalcAngle)*angle/20,ofGetElapsedTimef()/5);
                 xyCalcAngle = angle*angleMultiplier*PI/180;
-                if(mode == 0){
+                if(getMode() == 0){
                     zCalcAngle = angle*angleMultiplier*TWO_PI/180;
-                } else if(mode == 1) {
+                } else if(getMode() == 1) {
                     zCalcAngle = 0;
                 }
                 theta = angle/vertexNo*360*PI/180+noiseOffset;
                 fftIndex = abs(angle-vertexNo/2); 
-                if(mode == 0){
+                if(getMode() == 0){
                     radiusMultiplier = fftBin[fftIndex]*10 + 5;
                     noiseMultiplier = (layer) * 5 + fftBin[fftIndex]*5;
-                } else if(mode == 1){
+                } else if(getMode() == 1){
                     radiusMultiplier = fftBin[fftIndex]*10 + 5;
                     noiseMultiplier = (layer) * 10;
                 }

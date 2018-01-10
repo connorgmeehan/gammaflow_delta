@@ -385,6 +385,44 @@ obj/linux64/Release/src/control/ControlPanel.o: \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/PerlinOctopus.cpp \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/InterfaceCircle.cpp \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/TextDisplay.cpp \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/SVGDisplay.cpp \
+ /home/connorgmeehan/openFrameworks/addons/ofxSvg/src/ofxSvg.h \
+ /home/connorgmeehan/openFrameworks/addons/ofxSvg/libs/svgTiny/src/svgtiny.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/URIStreamOpener.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/StreamCopier.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Path.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/URI.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/HTTPStreamFactory.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/Net.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/HTTPSession.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/StreamSocket.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/Socket.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/SocketImpl.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/SocketDefs.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/SocketAddress.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/SocketAddressImpl.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/IPAddress.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/IPAddressImpl.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Timespan.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Timestamp.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/FIFOBuffer.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Buffer.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/BasicEvent.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/AbstractEvent.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/SingletonHolder.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/ActiveResult.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/ActiveMethod.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/ActiveRunnable.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/ActiveStarter.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/ThreadPool.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/DefaultStrategy.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/NotificationStrategy.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/AbstractDelegate.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Format.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Any.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/MetaProgramming.h \
+ /home/connorgmeehan/openFrameworks/libs/poco/include/Poco/URIStreamFactory.h \
+ /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/ImageDisplay.cpp \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/VIBE/TextFloat.cpp \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/QNTM/ShaderBackground.cpp \
  /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/QNTM/ShaderDesc.cpp \
@@ -1199,6 +1237,82 @@ obj/linux64/Release/src/control/ControlPanel.o: \
 /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/InterfaceCircle.cpp:
 
 /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/TextDisplay.cpp:
+
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/SVGDisplay.cpp:
+
+/home/connorgmeehan/openFrameworks/addons/ofxSvg/src/ofxSvg.h:
+
+/home/connorgmeehan/openFrameworks/addons/ofxSvg/libs/svgTiny/src/svgtiny.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/URIStreamOpener.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/StreamCopier.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Path.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/URI.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/HTTPStreamFactory.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/Net.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/HTTPSession.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/StreamSocket.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/Socket.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/SocketImpl.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/SocketDefs.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/SocketAddress.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/SocketAddressImpl.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/IPAddress.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Net/IPAddressImpl.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Timespan.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Timestamp.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/FIFOBuffer.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Buffer.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/BasicEvent.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/AbstractEvent.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/SingletonHolder.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/ActiveResult.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/ActiveMethod.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/ActiveRunnable.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/ActiveStarter.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/ThreadPool.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/DefaultStrategy.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/NotificationStrategy.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/AbstractDelegate.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Format.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/Any.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/MetaProgramming.h:
+
+/home/connorgmeehan/openFrameworks/libs/poco/include/Poco/URIStreamFactory.h:
+
+/home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/BRUT/ImageDisplay.cpp:
 
 /home/connorgmeehan/Dropbox/gammaflow_delta/src/displays/VIBE/TextFloat.cpp:
 
