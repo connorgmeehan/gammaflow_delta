@@ -21,7 +21,7 @@ int main( ){
 	settings.height = screenHeight;
 	settings.setPosition(ofVec2f(0,0));
 	settings.resizable = true;
-	//settings.windowMode = OF_GAME_MODE;
+	settings.windowMode = OF_GAME_MODE;
 	// uncomment next line to share main's OpenGL resources with gui
 	settings.shareContextWith = mainWindow;	
 	settings.setGLVersion(3,2);

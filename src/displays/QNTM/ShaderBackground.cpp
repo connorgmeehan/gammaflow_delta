@@ -12,7 +12,7 @@ public:
     ofVec2f shaderTranslate = ofVec2f(0.5, -0.5);
     
     std::string basePath = "";
-    std::string extensionPath = "./";
+    std::string extensionPath = "./quantum/";
     ofDirectory activeDirectory;
     vector<ofShader> shaders;
     int shaderIndex = 0;
@@ -113,7 +113,7 @@ public:
             } 
         }
 
-        setModeLength(activeDirectory.size());
+        setCurrentModeLength(activeDirectory.size());
 
         return std::string("loaded!");
     }

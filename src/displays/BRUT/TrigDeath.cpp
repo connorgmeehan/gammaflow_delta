@@ -14,13 +14,17 @@ public:
     int latNo = 32;
     int longNo = 100;
     int radius = -1;
-    int baseRadius = 400;
-    int radiusMultiplier = 400;
+    int baseRadius = 100;
+    int radiusMultiplier = 100;
+    float perlinHoles = 0;
+    float perlinOffset = 0;
+    float perlinOffsetMultiplier = 100;
 
     float angleMult = 360/latNo;
 
     void setup(){
-        gfNoUseCam();
+        //gfNoUseCam();
+        setupModes(2);
         temp.setMode(OF_PRIMITIVE_TRIANGLE_STRIP);
     }
 
@@ -30,34 +34,36 @@ public:
 
     ofVec3f vec;
     void draw(){
-        if(mode == 0){
+        if(getMode() == 0){
             draw1();
         } else {
             draw2();
         }
     }
 
-        void draw1(){
+    void draw1(){
         for(int layer = 0; layer < latNo; layer++){
             temp.clear();
             radius = baseRadius + fftBin[layer] * radiusMultiplier;
             for(int vert = 0; vert < longNo; vert++){
+                perlinHoles = ofSignedNoise((float) layer/10, (float) vert/10, ofGetElapsedTimef()/2);
+                perlinOffset = ofSignedNoise((float) layer/10, (float) vert/10, ofGetElapsedTimef()/2, 1);
 
-                if(ofSignedNoise((float) layer/10, (float) vert/10, ofGetElapsedTimef()/2) * 4 < volume * 4){
+                if( perlinHoles < volume){
                     temp.draw();
                     temp.clear();
                     continue;
                 }
                 vec.x = cos(ofDegToRad(layer*angleMult)) * cos(ofDegToRad(vert*angleMult));
-                vec.y = cos(ofDegToRad(layer*angleMult)) * sin(ofDegToRad(vert*angleMult));
-                vec.z = sin(ofDegToRad(-layer*angleMult/2));
-                temp.addVertex(vec * radius);
-                temp.addVertex(vec * (radius+5));
+                vec.y = sin(ofDegToRad(-layer*angleMult/2));
+                vec.z = cos(ofDegToRad(layer*angleMult)) * sin(ofDegToRad(vert*angleMult));
+                temp.addVertex(vec * radius + vec*perlinOffset*perlinOffsetMultiplier);
+                temp.addVertex(vec * (radius+fftBin[layer*10]*100) + vec*perlinOffset*perlinOffsetMultiplier);
             }
             temp.draw();
         }
     }
-        void draw2(){
+    void draw2(){
         for(int layer = 0; layer < latNo; layer++){
             temp.clear();
             radius = baseRadius + fftBin[layer] * radiusMultiplier;

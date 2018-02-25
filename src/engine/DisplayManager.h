@@ -35,12 +35,16 @@ public:
     Channel* activePrimary = nullptr;
     Channel* activeSecondary = nullptr;
 
+    ofFbo backgroundFbo;
+    ofTexture backgroundTexture;
+
     ofFbo primaryFbo;
     ofTexture primaryTexture;
     ofFbo secondaryFbo;
     ofTexture secondaryTexture;
 
-    ofShader inverseShader;
+    ofShader rotateColourShader; 
+    ofShader rotate2ColourShader; 
 
     vector<Channel*> channelBank;
     
@@ -59,6 +63,12 @@ public:
 
     ShaderBackground shaderBackground; 
     ShaderDesc shaderDesc;
+
+
+    int orbitBeatIndex = 0;
+    int orbitResetThreshold = 4;
+    ofVec3f orbitVector;
+    ofVec3f currentOrbit;
     void setup();
     void update();
     void draw();

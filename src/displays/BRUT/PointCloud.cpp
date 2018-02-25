@@ -29,7 +29,7 @@ class PointCloud : public Channel {
 
     void setup(){
         gfUseCam();
-        setModeLength(3);
+        setCurrentModeLength(3);
         points.resize(pointNumber);
         pointsTarget.resize(pointNumber);
         for(int i = 0; i < pointNumber; i++){

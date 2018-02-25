@@ -94,14 +94,14 @@ public:
         //overload this for in app functionality;
     }
 
-    virtual void setModeLength(int _modeLength){
+    virtual void setCurrentModeLength(int _modeLength){
         modeLength = _modeLength;
         if(modeIndex > modeLength){
             modeIndex = modeLength;
         }
     }
     virtual int getModeLength(){ return modeLength; }
-    virtual void setMode(int _mode){ modeIndex = _mode;}
+    virtual void setCurrentMode(int _mode){ modeIndex = _mode;}
     virtual int getMode(){ return modeIndex; }
 
     virtual void cycleMode(){
